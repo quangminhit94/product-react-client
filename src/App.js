@@ -19,8 +19,14 @@ class App extends Component {
   getProducts = _ => {
     fetch('//node-create-server.herokuapp.com/products')
       .then(response => response.json())
-      .then(response => this.setState({products: response.data}))
-      .catch(err => console.error(err))
+      .then(response => {
+        this.setState({products: response.data})
+        this.setState({productFetchError: false})
+      })
+      .catch(err => {
+        console.error(err)
+        this.setState({productFetchError: true})
+      })
   }
 
   async getProductsEs7() {
@@ -53,11 +59,11 @@ class App extends Component {
 renderProduct = ( {product_id, name, price} ) => <li key={product_id}>{product_id}.{name} - ${price}</li>
 
   render() {
-    const {products, product} = this.state
+    const {products, product, productFetchError} = this.state
     return (
       <div className="App">
         <ul>
-          {products.map(this.renderProduct)}
+          {productFetchError ? <li>Fetch product fail, something went wrong...</li> : products.map(this.renderProduct)}
         </ul>
 
         <div>
