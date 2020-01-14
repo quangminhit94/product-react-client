@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import './App.css';
+import './Loading.css';
 
 class App extends Component {
   
@@ -17,6 +18,7 @@ class App extends Component {
   }
 
   getProducts = _ => {
+    this.setState({showLoading: true})
     fetch('//node-create-server.herokuapp.com/products')
       .then(response => response.json())
       .then(response => {
@@ -27,6 +29,7 @@ class App extends Component {
         console.error(err)
         this.setState({productFetchError: true})
       })
+      .then( _ => this.setState({showLoading: false}))
   }
 
   async getProductsEs7() {
@@ -42,8 +45,8 @@ class App extends Component {
   }
 
   addProduct = _ => {
+    this.setState({showLoading: true})
     const {product} = this.state
-    // const {product_id,name} = product
 
     fetch('//node-create-server.herokuapp.com/products/add', {
       method: 'POST',
@@ -54,12 +57,48 @@ class App extends Component {
     })
       .then(this.getProducts)
       .catch(err => console.error(err))
+      .then( _ => this.setState({showLoading: false}))
   }
 
-renderProduct = ( {product_id, name, price} ) => <li key={product_id}>{product_id}.{name} - ${price}</li>
+  deleteProduct = id => {
+    this.setState({showLoading: true})
+    fetch(`//node-create-server.herokuapp.com/products/delete/${id}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json;charset=utf-8'
+      },
+    })
+      .then(this.getProducts)
+      .catch(err => {
+        console.error(err)
+        this.setState({productFetchError: true})
+      })
+      .then( _ => this.setState({showLoading: false}))
+  }
+
+  putProduct = id => {
+    const {product} = this.state
+
+    this.setState({showLoading: true})
+    fetch(`//node-create-server.herokuapp.com/products/put/${id}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json;charset=utf-8'
+      },
+      body: JSON.stringify(product)
+    })
+      .then(this.getProducts)
+      .catch(err => {
+        console.error(err)
+        this.setState({productFetchError: true})
+      })
+      .then( _ => this.setState({showLoading: false}))
+  }
+
+renderProduct = ( {product_id, name, price} ) => <li key={product_id}>{product_id}.{name} - ${price}<span onClick={e => this.deleteProduct(product_id)} >X</span></li>
 
   render() {
-    const {products, product, productFetchError} = this.state
+    const {products, product, productFetchError, showLoading} = this.state
     return (
       <div className="App">
         <ul>
@@ -77,6 +116,7 @@ renderProduct = ( {product_id, name, price} ) => <li key={product_id}>{product_i
             onChange={ e => this.setState({ product: {...product, price: e.target.value} }) } />
           <button onClick={this.addProduct}>Add Product</button>
         </div>
+        {showLoading ? <div className="loading">Loading&#8230;</div> : null}
       </div>
     );
   }
