@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/product-react-client.git/static/css/main.0ff80f15.chunk.css",
-    "main.js": "/product-react-client.git/static/js/main.a1d2a0a2.chunk.js",
-    "main.js.map": "/product-react-client.git/static/js/main.a1d2a0a2.chunk.js.map",
-    "runtime-main.js": "/product-react-client.git/static/js/runtime-main.6f087a8d.js",
-    "runtime-main.js.map": "/product-react-client.git/static/js/runtime-main.6f087a8d.js.map",
-    "static/js/2.99142b2e.chunk.js": "/product-react-client.git/static/js/2.99142b2e.chunk.js",
-    "static/js/2.99142b2e.chunk.js.map": "/product-react-client.git/static/js/2.99142b2e.chunk.js.map",
-    "index.html": "/product-react-client.git/index.html",
-    "precache-manifest.92e548953fab693954f5807e582e96bb.js": "/product-react-client.git/precache-manifest.92e548953fab693954f5807e582e96bb.js",
-    "service-worker.js": "/product-react-client.git/service-worker.js",
-    "static/css/main.0ff80f15.chunk.css.map": "/product-react-client.git/static/css/main.0ff80f15.chunk.css.map",
-    "static/js/2.99142b2e.chunk.js.LICENSE": "/product-react-client.git/static/js/2.99142b2e.chunk.js.LICENSE"
+    "main.css": "/product-react-client/static/css/main.0ff80f15.chunk.css",
+    "main.js": "/product-react-client/static/js/main.86a05f22.chunk.js",
+    "main.js.map": "/product-react-client/static/js/main.86a05f22.chunk.js.map",
+    "runtime-main.js": "/product-react-client/static/js/runtime-main.9f49b155.js",
+    "runtime-main.js.map": "/product-react-client/static/js/runtime-main.9f49b155.js.map",
+    "static/js/2.99142b2e.chunk.js": "/product-react-client/static/js/2.99142b2e.chunk.js",
+    "static/js/2.99142b2e.chunk.js.map": "/product-react-client/static/js/2.99142b2e.chunk.js.map",
+    "index.html": "/product-react-client/index.html",
+    "precache-manifest.b74edaee112f31087fc29aa75d60bcba.js": "/product-react-client/precache-manifest.b74edaee112f31087fc29aa75d60bcba.js",
+    "service-worker.js": "/product-react-client/service-worker.js",
+    "static/css/main.0ff80f15.chunk.css.map": "/product-react-client/static/css/main.0ff80f15.chunk.css.map",
+    "static/js/2.99142b2e.chunk.js.LICENSE": "/product-react-client/static/js/2.99142b2e.chunk.js.LICENSE"
   },
   "entrypoints": [
-    "static/js/runtime-main.6f087a8d.js",
+    "static/js/runtime-main.9f49b155.js",
     "static/js/2.99142b2e.chunk.js",
     "static/css/main.0ff80f15.chunk.css",
-    "static/js/main.a1d2a0a2.chunk.js"
+    "static/js/main.86a05f22.chunk.js"
   ]
 }
