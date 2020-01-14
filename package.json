@@ -1,5 +1,5 @@
 {
-  "homepage": "https://quangminhit94.github.io/deploy-react-github-pages/",
+  "homepage": "https://quangminhit94.github.io/product-react-client/",
   "name": "client",
   "version": "0.1.0",
   "private": true,
@@ -13,7 +13,7 @@
     "react-scripts": "3.3.0"
   },
   "scripts": {
-    "predeploy": "yarn run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
