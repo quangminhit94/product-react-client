@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/deploy-react-github-pages/static/css/main.0ff80f15.chunk.css",
-    "main.js": "/deploy-react-github-pages/static/js/main.638e741f.chunk.js",
-    "main.js.map": "/deploy-react-github-pages/static/js/main.638e741f.chunk.js.map",
-    "runtime-main.js": "/deploy-react-github-pages/static/js/runtime-main.2c314a5c.js",
-    "runtime-main.js.map": "/deploy-react-github-pages/static/js/runtime-main.2c314a5c.js.map",
-    "static/js/2.99142b2e.chunk.js": "/deploy-react-github-pages/static/js/2.99142b2e.chunk.js",
-    "static/js/2.99142b2e.chunk.js.map": "/deploy-react-github-pages/static/js/2.99142b2e.chunk.js.map",
-    "index.html": "/deploy-react-github-pages/index.html",
-    "precache-manifest.8dda240183a679a859c35643f9624820.js": "/deploy-react-github-pages/precache-manifest.8dda240183a679a859c35643f9624820.js",
-    "service-worker.js": "/deploy-react-github-pages/service-worker.js",
-    "static/css/main.0ff80f15.chunk.css.map": "/deploy-react-github-pages/static/css/main.0ff80f15.chunk.css.map",
-    "static/js/2.99142b2e.chunk.js.LICENSE": "/deploy-react-github-pages/static/js/2.99142b2e.chunk.js.LICENSE"
+    "main.css": "/product-react-client.git/static/css/main.0ff80f15.chunk.css",
+    "main.js": "/product-react-client.git/static/js/main.a1d2a0a2.chunk.js",
+    "main.js.map": "/product-react-client.git/static/js/main.a1d2a0a2.chunk.js.map",
+    "runtime-main.js": "/product-react-client.git/static/js/runtime-main.6f087a8d.js",
+    "runtime-main.js.map": "/product-react-client.git/static/js/runtime-main.6f087a8d.js.map",
+    "static/js/2.99142b2e.chunk.js": "/product-react-client.git/static/js/2.99142b2e.chunk.js",
+    "static/js/2.99142b2e.chunk.js.map": "/product-react-client.git/static/js/2.99142b2e.chunk.js.map",
+    "index.html": "/product-react-client.git/index.html",
+    "precache-manifest.92e548953fab693954f5807e582e96bb.js": "/product-react-client.git/precache-manifest.92e548953fab693954f5807e582e96bb.js",
+    "service-worker.js": "/product-react-client.git/service-worker.js",
+    "static/css/main.0ff80f15.chunk.css.map": "/product-react-client.git/static/css/main.0ff80f15.chunk.css.map",
+    "static/js/2.99142b2e.chunk.js.LICENSE": "/product-react-client.git/static/js/2.99142b2e.chunk.js.LICENSE"
   },
   "entrypoints": [
-    "static/js/runtime-main.2c314a5c.js",
+    "static/js/runtime-main.6f087a8d.js",
     "static/js/2.99142b2e.chunk.js",
     "static/css/main.0ff80f15.chunk.css",
-    "static/js/main.638e741f.chunk.js"
+    "static/js/main.a1d2a0a2.chunk.js"
   ]
 }
